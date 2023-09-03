@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <h1 id="">Hello World</h1>
+        <p>Hi everyone</p>        
+        <script>
+            document.write("Hello World")
+        </script>
+        <script>
+            document.getElementById("Hello World")
+            alert("Hello World")
+        </script> -->
+
+
+        <!-- <script>
+            var numberOne = 1000000;
+            var numberTwo = 2000000;
+            var numberThree = 3000000;
+            alert("numberOne");
+        </script> -->
+
+
+        <!-- <input type="text" placeholder="enter the first value" id="firstValue">
+        <input type="text" placeholder="enter the second value" id="secondValue">
+        <div id="two"></div>
+        <button onclick="multiply()">Multiply</button>
+        <script>
+            document.getElementById("two").innerHTML = "Hello World";
+            document.getElementById("firstValue").value = 10;
+        </script> -->
+
+
+        <input type="text" placeholder="enter the first value" id="firstValue">
+        <input type="text" placeholder="enter the first value" id="secondValue">
+
+        <div id="result"></div>
+        
+        
+        <div></div>
+        <button onclick="multiply()">Multiply</button>
+             
+        <button onclick="subtract()">subtraction</button>
+             
+        <button onclick="divide()">Division</button>
+            
+        <button onclick="add()">Addition</button>
+
+        <!-- (This div id=two is for conditional statement) -->
+        <div id="two">111111111</div>
+
+        <script>
+            function multiply(){
+                var numberOne = document.getElementById("firstValue").value;
+                var numberTwo = document.getElementById("secondValue").value;
+                // alert(numberOne / numberTwo);
+                if (numberOne == "" || numberTwo == "") {
+                    // alert("Syntax Error")
+                    var error = "Syntax Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "20px"
+                } else {
+                    var answer = numberOne * numberTwo;
+                    result.innerHTML = answer
+                }                                         
+            } 
+
+            function subtract(){
+                var numberOne = document.getElementById("firstValue").value;
+                var numberTwo = document.getElementById("secondValue").value;
+                // alert(numberOne / numberTwo); 
+                if (numberOne == "" || numberTwo == "") {
+                    // alert("Syntax Error")
+                    var error = "Syntax Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "20px"
+                } else {
+                    var answer = numberOne - numberTwo;
+                    result.innerHTML = answer
+                }
+            }
+
+            function divide(){
+                var numberOne = document.getElementById("firstValue").value;
+                var numberTwo = document.getElementById("secondValue").value;
+                // alert(numberOne / numberTwo);                
+                if (numberOne == "" || numberTwo == "") {
+                    // alert("Syntax Error")
+                    var error = "Syntax Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "20px"
+                } else {
+                    var answer = numberOne / numberTwo;
+                    result.innerHTML = answer
+                }
+            }
+
+            function add(){
+                var numberTwo = document.getElementById("firstValue").value;
+                var numberOne = document.getElementById("secondValue").value;
+                // alert(parseInt(numberOne) + parseInt(numberTwo));
+                if (numberOne == "" || numberTwo == "") {
+                    // alert("Syntax Error")
+                    var error = "Syntax Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "20px"
+                } else {               
+                    var answer = Number(numberOne) + Number(numberTwo);
+                    result.innerHTML = answer
+                }                
+            }
+
+            // // Conditional Statement
+
+            // var twoo = two.innerHTML;
+            // // alert(twoo)
+            // if (twoo == 12) {
+            //     alert("I am 12")
+            // } else {
+            //     alert ("I am not 12")
+            // }
+        </script>   
+        
+    </body>
+</html>
